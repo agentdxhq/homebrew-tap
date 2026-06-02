@@ -1,8 +1,8 @@
 class Agentdx < Formula
   desc "Flight recorder for AI coding agents"
   homepage "https://agentdx.ai"
-  url "https://registry.npmjs.org/@agentdx/agentdx/-/agentdx-0.1.1.tgz"
-  sha256 "1cb4f60628851d69590eda0f8ea183d65ea2734e896415fb5acfe4b248fcb1fc"
+  url "https://registry.npmjs.org/@agentdx/agentdx/-/agentdx-0.1.2.tgz"
+  sha256 "9f3ce09f6e63c0d1e661e1108104fb51edeafb40439f6c9dd9b6790070f2a90c"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Agentdx < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/agentdx --version")
+    assert_match "0.1.2", shell_output("#{bin}/agentdx --version")
   end
 end
